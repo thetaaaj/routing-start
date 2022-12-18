@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-users',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent {
+  constructor(private router: Router) { }
   users = [
     {
       id: 1,
@@ -20,4 +22,6 @@ export class UsersComponent {
       name: 'Chris'
     }
   ];
+
+
 }
